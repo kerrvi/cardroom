@@ -1,0 +1,166 @@
+
+.iframe-wrapper iframe {
+    width: 100%;
+    height: 100%;
+}
+/*home*/
+.location {
+    height: 30px;
+    line-height: 30px;
+    padding:0 8px;
+    margin: 0;
+}
+.location i {
+    color: red;
+    font-size: 18px;
+    margin: 0 5px;
+}
+.list .item .bottom {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #999;
+}
+.list .item .bottom .price {
+    float: right;
+    color: red;
+    font-size: 20px;
+}
+/*home结束*/
+/*room-detail开始*/
+.slider {
+    background: #fff;
+}
+.book {
+    padding:0 8px;
+    margin:0 0 10px 0;
+    background: #fff;
+}
+.book p {
+    padding:6px 0;
+    overflow: hidden;
+}
+.book .price {
+    color: red;
+    font-size: 28px;
+}
+.book #book-btn {
+    float: right;
+    background-color: red;
+    color: #ffffff;
+    width: 20%;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 4px;
+}
+#message {
+    padding:0 8px;
+    background: #fff;
+}
+#message #wrap {
+    overflow: hidden;
+    padding:8px 0;
+    border-bottom:1px solid #ccc;
+}
+#message div #left {
+    float: left;
+    width: 85%;
+}
+#message div #left .evaluate {
+    display: inline-block;
+    width: 30%;
+    height: 20px;
+    background: url("../images/sprite.jpg") no-repeat -525px -20px;
+}
+#message div #right {
+    float: right;
+    width: 15%;
+    height: 76px;
+    line-height: 76px;
+    text-align: center;
+    border-left: 1px solid #cccccc;
+}
+#message div #right i {
+    color: green;
+    font-size: 26px;
+}
+#message .address {
+    height: 30px;
+    line-height: 30px;
+}
+/*room-detail结束*/
+/*room-order开始*/
+.count {
+    padding: 0 8px;
+    margin-bottom: 5px;
+    background: #fff;
+}
+.roomlist {
+    
+}
+.roomlist li {
+    background: #fff;
+    padding:5px 8px 0 8px;
+}
+.roomlist li div {
+    padding-left:13%;
+    border-bottom:1px solid #ccc;
+    position: relative;
+}
+.roomlist li div span {
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: #0a9dc7;
+}
+.roomlist li div span.using {
+    background: #0fe24b;
+}
+.roomlist li div span.num {
+    top: 0;
+    left: 10px;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+}
+.roomlist li div span.room-btn {
+    top: 10px;
+    right: 5px;
+    width: 44px;
+    height: 22px;
+    border-radius: 2px;
+    line-height: 22px;
+}
+.roomlist li i {
+    color: #0a9dc7;
+}
+.roomlist li i.using {
+    color: #0fe24b;
+}
+.roomlist li p.using {
+    color: #0fe24b;
+}
+.roomlist li .name {
+    font-weight:600;
+}
+.roomlist li .status {
+     color: #0a9dc7;
+     font-size: 13px;
+ }
+.roomlist li .status i {
+    font-size: 14px;
+}
+.roomlist li .address {
+    color: #666;
+    font-size: 13px;
+}
+.roomlist li .address i {
+    font-size:14px;
+}
+.roomlist li .bottom {
+    font-size: 13px;
+    height: 22px;
+    line-height:22px;
+}
+/*room-order结束*/

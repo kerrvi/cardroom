@@ -1,0 +1,130 @@
+<ion-header-bar align-title="center" class="bar-positive">
+    <button class="button button-icon icon ion-ios-arrow-back" ng-click="goBack()"></button>
+    <div class="h1 title">西郊棋牌室</div>
+</ion-header-bar>
+<ion-view>
+    <ion-content overflow-scroll="true" on-swipe-right="goBack()" style="overflow:auto;background: #dedede;">
+        <div class="count">棋牌室4间
+            <label class="item-input">
+            <input type="date" ng-model="data.date" ng-change="dateShow()">
+            </label>
+        </div>
+
+        <ul class="roomlist" ng-if="data.default">
+            <li>
+                <div>
+                    <p class="name">1号间</p>
+                    <p class="status"><i class="icon ion-ios-paw-outline"></i> 空闲</p>
+                    <p class="address"><i class="icon ion-location"></i> 广州市萝岗区水西路西郊大楼</p>
+                    <span class="num">01</span>
+                    <span class="room-btn">预约</span>
+                </div>
+                <p class="bottom">
+                    &nbsp;&nbsp;<span>标准间</span>
+                    &nbsp;&nbsp;<span style="color: red;">￥66</span>
+                    &nbsp;&nbsp;<i class="icon ion-clock"></i><span> 6小时</span>
+                </p>
+            </li>
+            <li>
+                <div>
+                    <p class="name">2号间</p>
+                    <p class="status"><i class="icon ion-ios-paw-outline"></i> 空闲</p>
+                    <p class="address"><i class="icon ion-location"></i> 广州市萝岗区水西路西郊大楼</p>
+                    <span class="num">02</span>
+                    <span class="room-btn">预约</span>
+                </div>
+                <p class="bottom">
+                    &nbsp;&nbsp;<span>豪华间</span>
+                    &nbsp;&nbsp;<span style="color: red;">￥88</span>
+                    &nbsp;&nbsp;<i class="icon ion-clock"></i><span> 6小时</span>
+                </p>
+            </li>
+            <li>
+                <div>
+                    <p class="name">3号间</p>
+                    <p class="status using"><i class="icon ion-ios-paw using"></i> 使用中</p>
+                    <p class="address"><i class="icon ion-location using"></i> 广州市萝岗区水西路西郊大楼</p>
+                    <span class="num using">03</span>
+                    <span class="room-btn using">预约</span>
+                </div>
+                <p class="bottom">
+                    &nbsp;&nbsp;<span>豪华间</span>
+                    &nbsp;&nbsp;<span style="color: red;">￥88</span>
+                    &nbsp;&nbsp;<i class="icon ion-clock using"></i><span> 6小时</span>
+                </p>
+            </li>
+            <li>
+                <div>
+                    <p class="name">4号间</p>
+                    <p class="status using"><i class="icon ion-ios-paw using"></i> 使用中</p>
+                    <p class="address"><i class="icon ion-location using"></i> 广州市萝岗区水西路西郊大楼</p>
+                    <span class="num using">04</span>
+                    <span class="room-btn using">预约</span>
+                </div>
+                <p class="bottom">
+                    &nbsp;&nbsp;<span>豪华间</span>
+                    &nbsp;&nbsp;<span style="color: red;">￥88</span>
+                    &nbsp;&nbsp;<i class="icon ion-clock using"></i><span> 6小时</span>
+                </p>
+            </li>
+        </ul>
+        <ul class="roomlist" ng-if="!data.default">
+            <li>
+                <div>
+                    <p class="name">1号间</p>
+                    <p class="status"><i class="icon ion-ios-paw-outline"></i> 空闲</p>
+                    <p class="address"><i class="icon ion-location"></i> 广州市萝岗区水西路西郊大楼</p>
+                    <span class="num">01</span>
+                    <span class="room-btn">预约</span>
+                </div>
+                <p class="bottom">
+                    &nbsp;&nbsp;<span>标准间</span>
+                    &nbsp;&nbsp;<span style="color: red;">￥66</span>
+                    &nbsp;&nbsp;<i class="icon ion-clock"></i><span> 6小时</span>
+                </p>
+            </li>
+            <li>
+                <div>
+                    <p class="name">2号间</p>
+                    <p class="status"><i class="icon ion-ios-paw-outline"></i> 空闲</p>
+                    <p class="address"><i class="icon ion-location"></i> 广州市萝岗区水西路西郊大楼</p>
+                    <span class="num">02</span>
+                    <span class="room-btn">预约</span>
+                </div>
+                <p class="bottom">
+                    &nbsp;&nbsp;<span>豪华间</span>
+                    &nbsp;&nbsp;<span style="color: red;">￥88</span>
+                    &nbsp;&nbsp;<i class="icon ion-clock"></i><span> 6小时</span>
+                </p>
+            </li>
+            <li>
+                <div>
+                    <p class="name">3号间</p>
+                    <p class="status"><i class="icon ion-ios-paw-outline"></i> 空闲</p>
+                    <p class="address"><i class="icon ion-location"></i> 广州市萝岗区水西路西郊大楼</p>
+                    <span class="num">03</span>
+                    <span class="room-btn">预约</span>
+                </div>
+                <p class="bottom">
+                    &nbsp;&nbsp;<span>豪华间</span>
+                    &nbsp;&nbsp;<span style="color: red;">￥88</span>
+                    &nbsp;&nbsp;<i class="icon ion-clock"></i><span> 6小时</span>
+                </p>
+            </li>
+            <li>
+                <div>
+                    <p class="name">4号间</p>
+                    <p class="status using"><i class="icon ion-ios-paw using"></i> 使用中</p>
+                    <p class="address"><i class="icon ion-location using"></i> 广州市萝岗区水西路西郊大楼</p>
+                    <span class="num using">04</span>
+                    <span class="room-btn using">预约</span>
+                </div>
+                <p class="bottom">
+                    &nbsp;&nbsp;<span>豪华间</span>
+                    &nbsp;&nbsp;<span style="color: red;">￥88</span>
+                    &nbsp;&nbsp;<i class="icon ion-clock using"></i><span> 6小时</span>
+                </p>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>

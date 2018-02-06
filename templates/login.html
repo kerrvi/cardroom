@@ -1,0 +1,29 @@
+﻿<ion-header-bar align-title="center" class="bar-positive">
+    <div class="h1 title">货运销售系统</div>
+</ion-header-bar>
+<ion-view>
+    <ion-content overflow-scroll="true" style="overflow:auto;">
+
+        <form name="form" novalidate>
+
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input type="text" name="loginCode" ng-model="data.loginCode" placeholder="登录帐号" required>
+                </label>
+                <label class="item item-input">
+                    <input type="password" ng-model="data.loginPwd" placeholder="登录密码">
+                </label>
+            </div>
+
+            <div class="padding">
+                <button class="button button-block button-calm" ng-click="login()"
+                        ng-disabled="form.loginCode.$invalid">
+                    登录
+                </button>
+            </div>
+
+        </form>
+
+    </ion-content>
+
+</ion-view>

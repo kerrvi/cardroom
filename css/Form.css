@@ -1,0 +1,54 @@
+﻿
+.ftitle
+{
+    font-size:14px;
+	font-weight:bold;
+	color:#666;
+	padding:5px 0;
+	margin-bottom:20px;
+	border-bottom:1px solid #ccc;
+}
+
+.fitem
+{
+    margin-bottom:15px;
+}
+
+.fitem label
+{
+    display:inline-block;
+	width:90px;
+	text-align:right;
+	vertical-align:top;
+	margin-top:2px;
+}
+
+.fitem input
+{
+    width:500px;
+    height:auto;
+}
+
+.fitem select
+{
+     width:500px;
+     height:auto;
+}
+
+.fitem textarea
+{
+     width:500px;
+     height:100px;
+}
+
+.fitem input[type=checkbox]
+{
+    width:20px;
+    vertical-align:middle;
+}
+
+.fitem input[type=radio]
+{
+    width:20px;
+    vertical-align:top;
+}

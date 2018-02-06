@@ -1,0 +1,52 @@
+<ion-header-bar align-title="center" class="bar-positive">
+    <button class="button button-icon icon ion-ios-arrow-back" ng-click="goBack()"></button>
+    <div class="h1 title">西郊棋牌室</div>
+</ion-header-bar>
+<ion-view>
+    <ion-content overflow-scroll="true" style="overflow:auto;background: #dedede;">
+        <ion-slide-box on-slide-changed="slideHasChanged(index)"
+                       pager-click="toSlideIndex(index)" active-slide="data.activeIndex"
+                       show-pager="true" does-continue="true" auto-play="true"
+                       slide-interval="3000" disable-scroll="false">
+            <ion-slide>
+                <div class="slide-box">
+                    <a href="javascript:;" >
+                        <img style="width: 100%;height: 190px;" ion-img-cache ng-src="./images/room1.jpg" />
+                    </a>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-box">
+                    <a href="javascript:;" >
+                        <img style="width: 100%;height: 190px;" ion-img-cache ng-src="./images/room2.jpg" />
+                    </a>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-box">
+                    <a href="javascript:;" >
+                        <img style="width: 100%;height: 190px;" ion-img-cache ng-src="./images/room3.jpg" />
+                    </a>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="book">
+            <p>
+                <span class="price">￥48</span>
+                <span id="book-btn" ng-click="roomOrder()">预约</span>
+            </p>
+        </div>
+        <div id="message">
+            <div id="wrap">
+                <div id="left">
+                    <h4 id="title">西郊棋牌室</h4>
+                    <p class="evaluate" ></p>
+                </div>
+                <div id="right">
+                    <i class="icon ion-ios-telephone"></i>
+                </div>
+            </div>
+            <p class="address">地址：广东省广州市萝岗区水西路</p>
+        </div>
+    </ion-content>
+</ion-view>
