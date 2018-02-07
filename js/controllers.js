@@ -33,6 +33,7 @@
             }
 //定位数据获取成功响应
             function  onSuccess(position){
+                alert(JSON.stringify(position));
                 alert('纬度: '          + position.coords.latitude          + '\n' +
                     '经度: '         + position.coords.longitude         + '\n' +
                     '海拔: '          + position.coords.altitude          + '\n' +
