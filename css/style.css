@@ -26,6 +26,37 @@
     font-size: 20px;
 }
 /*home结束*/
+/*login开始*/
+#wrap {
+    color: #fff;
+    margin-top: 30px;
+}
+#wrap h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size:22px;
+}
+#wrap input {
+    width: 90%;
+    height: 50px;
+    margin: 5%;
+    border: 0;
+    border-radius: 64px;
+    text-align: center;
+    background-color: rgba(224, 224, 224, 0.48);
+}
+#wrap input::-webkit-input-placeholder{
+    color: #fff;
+}
+#wrap button {
+    height: 50px;
+    border-radius: 64px;
+    background: #28a54c;
+    color: #fff;
+}
+
+/*login结束*/
 /*room-detail开始*/
 .slider {
     background: #fff;
@@ -89,7 +120,7 @@
     line-height: 30px;
 }
 /*room-detail结束*/
-/*room-order开始*/
+/*room-list开始*/
 .count {
     padding: 0 8px;
     margin-bottom: 5px;
@@ -114,7 +145,8 @@
     background-color: #0a9dc7;
 }
 .roomlist li div span.using {
-    background: #0fe24b;
+    background: #ef473a;
+    opacity:.5;
 }
 .roomlist li div span.num {
     top: 0;
@@ -127,19 +159,17 @@
 .roomlist li div span.room-btn {
     top: 10px;
     right: 5px;
-    width: 44px;
-    height: 22px;
-    border-radius: 2px;
-    line-height: 22px;
+    border-radius: 3px;
+    padding: 3px 5px;
 }
 .roomlist li i {
     color: #0a9dc7;
 }
 .roomlist li i.using {
-    color: #0fe24b;
+    color: #ef473a;
 }
 .roomlist li p.using {
-    color: #0fe24b;
+    color: #ef473a;
 }
 .roomlist li .name {
     font-weight:600;
@@ -163,4 +193,13 @@
     height: 22px;
     line-height:22px;
 }
-/*room-order结束*/
+/*room-list结束*/
+/*my-order开始*/
+.roomlist li div span.cansole {
+    background: #444;
+    opacity: .8;
+ }
+.roomlist li div span.myUsing {
+    background: #ef473a;
+}
+/*my-order结束*/
