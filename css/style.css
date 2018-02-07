@@ -161,6 +161,7 @@
     right: 5px;
     border-radius: 3px;
     padding: 3px 5px;
+    min-width:50px;
 }
 .roomlist li i {
     color: #0a9dc7;
