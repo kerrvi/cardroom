@@ -30,14 +30,14 @@
     <!--<link rel="Stylesheet" type="text/css" href="styles/index.css" />-->
 
   </head>
-  <body ng-controller="HomeCtrl">
+  <body ng-controller="indexCtrl">
       <ion-nav-view animation="slide-left-right">
       </ion-nav-view>
       <ion-side-menus>
         <ion-side-menu-content>
           <ion-header-bar align-title="center" class="bar-positive">
             <div class="h1 title">棋牌室</div>
-            <button class="button pull-right"><i class="icon ion-navicon-round" ></i></button>
+            <button class="button pull-right" ng-click="toggleLeftSideMenu()"><i class="icon ion-navicon-round" ></i></button>
           </ion-header-bar>
           <ion-content overflow-scroll="true" style="overflow:auto;background: #dedede;">
             <p class="location"><i class="icon ion-location"></i>广东省广州市萝岗区水西路</p>
@@ -74,12 +74,23 @@
             </div>
           </ion-content>
         </ion-side-menu-content>
-        <ion-side-menu side="left" width="120">
-          <ion-content class="balanced-bg">
-          </ion-content>
-        </ion-side-menu>
-        <ion-side-menu side="right" width="120" >
-          <ion-content class="energized-bg">
+        <ion-side-menu side="right" width="200">
+          <ion-content >
+            <a class="item item-avatar item-icon-right" ng-click="login()">
+              <!--<img src="./images/header.jpg">-->
+              <!--<h2>Venkman</h2>-->
+              <!--<p>我是一名科学家</p>-->
+              <img src="./images/headerload.jpg">
+              <h2>未登录</h2>
+              <i class="icon ion-ios-arrow-forward"></i>
+            </a>
+
+            <a class="item item-icon-right" ng-click="myOrder()">
+              我的预约
+              <i class="icon ion-ios-arrow-forward"></i>
+            </a>
+
+
           </ion-content>
         </ion-side-menu>
       </ion-side-menus>
